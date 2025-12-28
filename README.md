@@ -12,7 +12,7 @@
 This repository demonstrates comprehensive Software Quality Assurance (SQA) practices applied to three machine learning projects:
 
 1. ✅ **Titanic Survival Prediction** - Classification (COMPLETED)
-2. ⏳ **House Prices Regression** - Regression (PENDING)
+2. ✅ **House Prices Regression** - Regression (COMPLETED)
 3. ⏳ **Sentiment140 Analysis** - NLP Sentiment Classification (PENDING)
 
 ---
@@ -90,6 +90,27 @@ DS-AI-SQA-Project/
 - 2 Change Requests (CR-001, CR-002)
 - 2 Impact Assessments (IA-001, IA-002)
 - 2 GitHub Issues resolved
+- 2 Desk Checks completed
+- 1 Configuration Audit passed
+
+---
+
+## House Prices Project Results
+
+### Performance Metrics
+| Model | Test RMSE | Test R² | Test MAE | Overfitting Gap | CV RMSE |
+|-------|-----------|---------|----------|-----------------|---------|
+| **Lasso Regression** | **$34,469** | **0.8451** | **$19,724** | **9.2%** | **$35,078 ± $8,424** |
+| Ridge Regression | $34,470 | 0.8451 | $19,735 | 9.3% | $35,164 ± $8,409 |
+| Linear Regression | $34,567 | 0.8442 | $19,776 | 9.8% | $35,475 ± $8,433 |
+| Random Forest | $38,278 | 0.8090 | $20,980 | 21.1% | $34,115 ± $5,564 |
+
+✅ **Best model: Lasso Regression - Explains 84.51% of price variance**
+
+### SQA Documentation
+- 2 Change Requests (CR-003, CR-004)
+- 2 Impact Assessments (IA-003, IA-004)
+- 2 GitHub Issues resolved (#3, #4)
 - 2 Desk Checks completed
 - 1 Configuration Audit passed
 
