@@ -13,7 +13,7 @@ This repository demonstrates comprehensive Software Quality Assurance (SQA) prac
 
 1. ✅ **Titanic Survival Prediction** - Classification (COMPLETED)
 2. ✅ **House Prices Regression** - Regression (COMPLETED)
-3. ⏳ **Sentiment140 Analysis** - NLP Sentiment Classification (PENDING)
+3. ✅ **Sentiment140 Analysis** - NLP Sentiment Classification (COMPLETED)
 
 ---
 
@@ -112,6 +112,32 @@ DS-AI-SQA-Project/
 - 2 Impact Assessments (IA-003, IA-004)
 - 2 GitHub Issues resolved (#3, #4)
 - 2 Desk Checks completed
+- 1 Configuration Audit passed
+
+---
+## Sentiment140 Project Results
+
+### Performance Metrics
+| Model | Test Accuracy | Precision | Recall | F1-Score | CV Accuracy | SQA Status |
+|-------|---------------|-----------|--------|----------|-------------|------------|
+| **Logistic Regression** | **71-72%** | **0.75** | **0.66** | **0.70** | **~0.70** | **✅ PASS** |
+| Naive Bayes | 68% | 0.70 | 0.64 | 0.67 | ~0.68 | Close |
+| Linear SVM | 69% | 0.71 | 0.65 | 0.68 | ~0.69 | Close |
+
+✅ **Best model: Logistic Regression - Passes SQA baseline (≥70%)**
+
+### NLP Pipeline
+- **Dataset:** 1.6M tweets (1000 sample for development)
+- **Preprocessing:** Text cleaning, normalization
+- **Feature Extraction:** TF-IDF with 1150 features + bigrams
+- **Class Balance:** Perfect 50/50 split (stratified sampling)
+- **Regularization:** L2 (C=0.5) to prevent overfitting
+
+### SQA Documentation
+- 2 Change Requests (CR-005, CR-006)
+- 2 Impact Assessments (IA-005, IA-006)
+- 2 GitHub Issues resolved (#5, #6)
+- 3 Desk Checks completed
 - 1 Configuration Audit passed
 
 ---
